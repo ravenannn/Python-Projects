@@ -1,0 +1,10 @@
+def getSum(num1,num2):
+    answer = num1 + num2
+    print("The answer is {}.".format(answer))
+
+getSum(2,4)
+
+myAdd = getSum
+print(myAdd)
+
+myAdd(2,6)
