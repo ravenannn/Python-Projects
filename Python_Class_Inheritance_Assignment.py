@@ -21,3 +21,11 @@ class Customer(Festival_Attendee):
     three_day_pass = True
 
 
+
+
+
+
+                
+
+
+

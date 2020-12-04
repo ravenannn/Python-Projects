@@ -7,6 +7,7 @@ class User:
     email = ""
     password = "1234abcd"
     account = 0
+
 # Child classes inheriting properties and functions
 class Employee(User):
     base_pay: 11.00
@@ -17,7 +18,6 @@ class Customer(User):
     mailing_list = True
 
 
-
     #Define the methods of the class
     def login(self):
         entry_email = input("Enter your email: ")
@@ -26,14 +26,12 @@ class Customer(User):
             print("Welcome back, {}".format(self.name))
         else:
             print("You are not authorized for this page.")
-                
+
     def __init__(self, name, email, password, account):
         self.name = name
         self.email = email
         self.password = password
-        self.account - account
-
-
+        self.account = account
 # ^^^^^For simplicity, this example is not using any security methods to
 #encrypt the password. This is not how passwords would be handled in real use
 
@@ -41,8 +39,6 @@ class Customer(User):
 # With this set up '__init__()', you can create a new object in a single line of code like this:
 
 New_user = User("John Doe", "jdoe@outlook.com", "p@ssw0rd", 1234)
-
-
 
 
 # Call the login method using the new object
