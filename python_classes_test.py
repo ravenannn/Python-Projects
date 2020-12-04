@@ -51,7 +51,7 @@ class Bacterium(Organism):
     origin = "Mars"
 
     def replication(self):
-        msg = "/nThe cells begin to divide and multiply into two separate organisms!"
+        msg = "\nThe cells begin to divide and multiply into two separate organisms!"
         return msg
 
     
@@ -65,9 +65,9 @@ if __name__ == "__main__":
     print(human.ingenuity())
 
     dog = Dog()
-    print(dog.information)
+    print(dog.information())
     print(dog.bite())
 
     bacteria = Bacterium()
-    print(bacteria.information)
-    print(bacteria.replication)
+    print(bacteria.information())
+    print(bacteria.replication())
