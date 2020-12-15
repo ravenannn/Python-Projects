@@ -13,7 +13,7 @@ class ParentWindow(Frame):
         self.master = master
         self.master.geometry("600x158")
         self.master.title('Check files')
-        v = StringVar()
+
 
         #Create Browse Labels
         self.lblBrowse1 = Label(self.master,text="Choose Source: ", font=("Helvetica", 10), fg="black")
